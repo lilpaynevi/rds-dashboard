@@ -1,0 +1,13 @@
+version: "2"
+services:
+  rds_dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node:24-alpine
+    container_name: rds_dashboard
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 8084:5173
