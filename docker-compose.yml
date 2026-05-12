@@ -10,4 +10,4 @@ services:
       - .:/app
       - /app/node_modules
     ports:
-      - 8084:5173
+      - 8085:5173
