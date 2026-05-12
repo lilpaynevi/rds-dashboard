@@ -12,10 +12,11 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0",
-    port: 8084,
+    port: 5173,
+    allowedHosts: ["dashboard.rdsconnetc.site"],
   },
   preview: {
     host: "0.0.0.0",
-    port: 8084,
+    port: 8085,
   },
 });
