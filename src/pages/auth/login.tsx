@@ -88,7 +88,12 @@ export function Login() {
           />
         </div>
 
-        <Button type="submit" className="w-full" disabled={isLoading}>
+        <Button
+          type="submit"
+          variant={"default"}
+          className="w-full"
+          disabled={isLoading}
+        >
           {isLoading ? "Connexion..." : "Se connecter"}
         </Button>
       </form>
